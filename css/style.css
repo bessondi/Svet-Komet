@@ -1,0 +1,147 @@
+fonts */
+@font-face {
+	font-family: "Lato";
+	src: url('../fonts/Lato-Medium.ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+	font-family: "Lato";
+	src: url('../fonts/Lato-Light.ttf');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url('../fonts/Lato-Thin.ttf');
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+
+
+/* global */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-weight: 300;
+	font-size: 1.2em;
+	color: #fff;
+	background-color: #000;
+}
+
+.section1 {
+	font-size: 1.25em;
+}
+
+
+/* main parallax */
+#container, .bmov5 {
+	display: flex;
+	justify-content: center;
+}
+
+#scene {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.layer img {
+	width: 100%;
+}
+
+
+
+
+/* parallax for blocks */
+.section {
+	text-align: center;
+	padding: 25px 70px;
+	min-height: 200px;
+}
+
+.section1 {
+	position: relative;
+	z-index: 10;
+	background-color: #000;
+}
+
+.section1 h1 {
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-container-vertical {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+
+
+/* images */
+.block-image {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.bimg1 {
+	background-image: url('../img/lh_black.jpg');
+	min-height: 800px;
+
+	z-index: 5;
+}
+
+.bimg2 {
+	background-image: url('../img/inter2.jpg');
+	min-height: 800px;
+}
+
+.bimg3 {
+	background-image: url('../img/sh_white.jpg');
+	min-height: 800px;
+}
+
+.bimg4 {
+	background-image: url('../img/inter1.jpg');
+	min-height: 800px;
+}
+
+.bmov5 video {
+    height: 800px;
+}
+
+.section6, .section7 {
+	text-align: left;
+}
+
+
+/* media < 1000 for scroll */
+@media screen and (max-width: 1000px) {
+	.block-image {
+	background-attachment: scroll;
+	min-height: 600px;
+	}
+}
+/* media < 1200 for video div */
+@media screen and (max-width: 1200px) {
+	/* .section1 {
+	position: relative;
+	} */
+
+	.flex-container, .flex-container-vertical {
+	display: block;
+	}
+}
