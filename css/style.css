@@ -1,4 +1,5 @@
-fonts */
+
+/* fonts */
 @font-face {
 	font-family: "Lato";
 	src: url('../fonts/Lato-Medium.ttf');
@@ -20,21 +21,19 @@ fonts */
 }
 
 
-
-
 /* global */
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Lato", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-family: "Lato", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
 	font-weight: 300;
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	color: #fff;
 	background-color: #000;
 }
 
 .section1 {
-	font-size: 1.25em;
+	font-size: 1.2rem;
 }
 
 
@@ -120,13 +119,19 @@ body {
 }
 
 .bmov5 video {
-    height: 800px;
+    width: 600px;
 }
 
 .section6, .section7 {
 	text-align: left;
 }
 
+/* media < 600 for video */
+@media screen and (max-width: 600px) {
+	.bmov5 video {
+		width: 400px;
+	}
+}
 
 /* media < 1000 for scroll */
 @media screen and (max-width: 1000px) {
