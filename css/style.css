@@ -33,7 +33,7 @@ body {
 }
 
 .section1 {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 }
 
 
@@ -128,6 +128,14 @@ body {
 
 /* media < 600 for video */
 @media screen and (max-width: 600px) {
+	body {
+		font-size: 1.4rem;
+	}
+
+	.section1 {
+		font-size: 1.6rem;
+	}
+	
 	.bmov5 video {
 		width: 400px;
 	}
