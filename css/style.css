@@ -12,13 +12,14 @@
     font-style: normal;
     font-weight: 300;
 }
-
 @font-face {
 	font-family: "Lato";
 	src: url('../fonts/Lato-Thin.ttf');
     font-style: normal;
     font-weight: 100;
 }
+
+
 
 
 /* global */
@@ -37,6 +38,8 @@ body {
 }
 
 
+
+
 /* main parallax */
 #container, .bmov5 {
 	display: flex;
@@ -47,6 +50,8 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	//width: auto;
+
 }
 
 .layer img {
@@ -56,7 +61,7 @@ body {
 
 
 
-/* parallax for blocks */
+/* parallax for block */
 .section {
 	text-align: center;
 	padding: 25px 70px;
@@ -66,7 +71,8 @@ body {
 .section1 {
 	position: relative;
 	z-index: 10;
-	background-color: #000;
+	color: #000;
+	background-color: #fff;
 }
 
 .section1 h1 {
@@ -99,8 +105,6 @@ body {
 .bimg1 {
 	background-image: url('../img/lh_black.jpg');
 	min-height: 800px;
-
-	z-index: 5;
 }
 
 .bimg2 {
@@ -126,8 +130,10 @@ body {
 	text-align: left;
 }
 
+
+
 /* media < 600 for video */
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	body {
 		font-size: 1.4rem;
 	}
@@ -139,7 +145,7 @@ body {
 	.bmov5 video {
 		width: 400px;
 	}
-} */
+}
 
 /* media < 1000 for scroll */
 @media screen and (max-width: 1000px) {
@@ -148,6 +154,7 @@ body {
 	min-height: 600px;
 	}
 }
+
 /* media < 1200 for video div */
 @media screen and (max-width: 1200px) {
 	/* .section1 {
