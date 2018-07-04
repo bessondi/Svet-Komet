@@ -28,13 +28,13 @@ body {
 	padding: 0;
 	font-family: "Lato", "Helvetica Neue", "Arial", "Helvetica";
 	font-weight: 300;
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 	color: #fff;
 	background-color: #000;
 }
 
 .section1 {
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 }
 
 
@@ -44,21 +44,24 @@ body {
 #container, .bmov5 {
 	display: flex;
 	justify-content: center;
+	overflow: hidden;
+	
 }
 
 #scene {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	//width: auto;
-
+	width: 100%;
 }
 
 .layer img {
 	width: 100%;
 }
 
-
+.layer {
+	width: 100%;
+}
 
 
 /* parallax for block */
@@ -71,8 +74,8 @@ body {
 .section1 {
 	position: relative;
 	z-index: 10;
-	color: #000;
-	background-color: #fff;
+	color: #fff;
+	background-color: #000;
 }
 
 .section1 h1 {
@@ -104,7 +107,7 @@ body {
 
 .bimg1 {
 	background-image: url('../img/lh_black.jpg');
-	min-height: 800px;
+	min-height: 1000px;
 }
 
 .bimg2 {
@@ -134,13 +137,13 @@ body {
 
 /* media < 600 for video */
 @media screen and (max-width: 600px) {
-	body {
+	/* body {
 		font-size: 1.4rem;
 	}
 
 	.section1 {
 		font-size: 1.6rem;
-	}
+	} */
 	
 	.bmov5 video {
 		width: 400px;
