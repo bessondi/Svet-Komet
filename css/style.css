@@ -45,14 +45,12 @@ body {
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
-	
 }
 
 #scene {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	width: 100%;
 }
 
 .layer img {
@@ -160,10 +158,6 @@ body {
 
 /* media < 1200 for video div */
 @media screen and (max-width: 1200px) {
-	/* .section1 {
-	position: relative;
-	} */
-
 	.flex-container, .flex-container-vertical {
 	display: block;
 	}
