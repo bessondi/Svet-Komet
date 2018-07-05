@@ -134,6 +134,9 @@ p {
 
 /* media < 600 for video */
 @media screen and (max-width: 600px) {
+	body {
+		-webkit-text-size-adjust: 100%;
+	}
 	/* body {
 		font-size: 1.4rem;
 	}
