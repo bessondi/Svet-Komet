@@ -27,16 +27,20 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Lato", "Helvetica Neue", "Arial", "Helvetica";
-	font-weight: 300;
-	font-size: 1.6rem;
 	color: #fff;
 	background-color: #000;
 }
 
-.section1 {
+h1 {
+	text-transform: uppercase;
+	font-weight: 500;
 	font-size: 1.8rem;
 }
 
+p {
+	font-size: 1.4rem;
+	font-weight: 300;
+}
 
 
 
@@ -66,7 +70,7 @@ body {
 .section {
 	text-align: center;
 	padding: 25px 70px;
-	min-height: 200px;
+	//min-height: 200px;
 }
 
 .section1 {
@@ -74,11 +78,6 @@ body {
 	z-index: 10;
 	color: #fff;
 	background-color: #000;
-}
-
-.section1 h1 {
-	text-transform: uppercase;
-	font-weight: 500;
 }
 
 .flex-container {
