@@ -44,6 +44,7 @@
 		color: black;
 	}
 	footer {
+		height: 150px;
 		background-color: black; 
 	}
 
@@ -100,10 +101,36 @@
 
 /* products */
 	.products, .frameSize, .footer {
-		margin: auto;
+		margin: 50px auto;
 		max-width: 1280px;
-		//border: 1px solid red;
 	}
+
+	/* flexboxes */
+	.content4x {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-content: space-around;
+	}
+	.flexItems {
+		margin-top: 25px;
+	}
+	.itemsText{
+		margin-top: 15px;
+	}
+	.flexItems:nth-child(1) {
+		order: 1;
+	}
+	.flexItems:nth-child(2) {
+		order: 2;
+	}
+	.flexItems:nth-child(3) {
+		order: 3;
+	}
+	.flexItems:nth-child(4) {
+		order: 4;
+	}
+
 
 /* nav - menu */
 	.nav {
@@ -142,18 +169,6 @@
 		text-decoration: none;
 		color: black;
 	}
-	.arrow {
-		fill: #222222;
-	    height: 10px;
-	    width: 15px;
-	}
-	#cart {
-		fill: #222222;
-	    float: right;
-	    height: 20px;
-	    margin-top: 6px;
-	    margin-left: 5px;  
-	}
 
 /* content */
 	.content2x {
@@ -185,44 +200,40 @@
 		grid-column: 3;
 	}
 
-	.content3x {
-		display: grid;
-		align-items: center;
-		justify-content: space-around;
-		grid-template-columns: 300px 300px 300px;
-		margin: 50px 50px 0 50px;
-		background-color: #f5f5f5;
-	}
 	#itemsImg1 {
 		background: url('../img/Ship02.jpg') no-repeat;
-		height: 300px;
-		
+		height: 225px;
+		width: 225px;
 		background-position: center;
 		background-size: cover;
-		grid-column: 1;
 	}
 	#itemsImg2 {
-		background: url('../img/Lighthouse02.jpg') no-repeat;
-		height: 300px;
-		
+		background: url('../img/Lighthouse02.jpg')no-repeat;
+		height: 225px;
+		width: 225px;
 		background-position: center;
 		background-size: cover;
-		grid-column: 2;
 	}
 	#itemsImg3 {
 		background: url('../img/City02.jpg') no-repeat;
-		height: 300px;
+		height: 225px;
+		width: 225px;
 		background-position: center;
 		background-size: cover;
-		grid-column: 3;
-		box-shadow: ;
 	}
-	.contentText3x {
-		justify-items: center;
-		margin: 20px;
+	#itemsImg4 {
+		background: url('../img/SPb.jpg') no-repeat;
+		height: 225px;
+		width: 225px;
+		background-position: center;
+		background-size: cover;
 	}
 
-	.itemsText1, .itemsText2, .itemsText3 {
+	 .contentText4x {
+		margin: -25px 0 50px 0;
+	}
+
+	.itemsText {
 		text-align: center;
 	}
 
@@ -240,21 +251,17 @@
 
 	#videoBlock video {
 		height: 600px;
-		//margin: 0;
+		/* margin: 0; */
 	}
 
 
 /* footer */
-.footer ul {
-	list-style: none; 
-}
-.footer a, #textContact {
+
+#textContact {
 	color: #fafafa;
 	font-size: 1.2rem;
 	margin-bottom: 20px;
-}
-.footer li {
-	margin: 20px 0;
+	padding-top: 20px;
 }
 
 .contactsItem {
@@ -263,42 +270,128 @@
 	fill: #fafafa;
 }
 
-.aboutBloks {
-	grid-column: 2;
-}
 .contacts {
-	grid-column: 3;
-	text-align: end;
+	text-align: center;
 }
 
 /* media */
 	/* media < 640 for video */
-		@media screen and (max-width: 640px) {
+		@media screen and (max-width: 600px) {
 			
 		}
 
 	/* media < 900 for scroll */
 		@media screen and (max-width: 900px) {
+			/* parallax min */
+			#container {
+				display: none;
+			}
+			
+			#containerImage {
+				background: url('../img/Sea_min.jpg') no-repeat;
+				height: 600px;
+				max-width: 900px;
+				background-position: center;
+				background-size: cover;
+			}
+			
+			/* nav */
+			h1 {
+				font-size: 2rem;
+			}
+			.nav{
+				grid-template-columns: 10px 1fr 10px;
+				grid-template-rows: 15px 100px 50px;
+			}
+			.nav h1 {
+				display: flex;
+				justify-content: center;
+				grid-column: 2;
+				grid-row: 2;
+			}
+			.nav #comet {
+				display: flex;
+				justify-content: center;
+				font-size: 3rem;
+				margin-left: 100px;
+				margin-bottom: 15px;
+				grid-column: 2;
+				grid-row: 2;
+			}
+
+			.menu {
+				font-size: 1.3rem;
+				font-weight: 700;
+				grid-column: 2;
+				grid-row: 3;
+			}
+			.menu ul {
+				display: flex;
+				justify-content: center;
+				padding-left: 0; 
+			}
+			.menu ul > li {
+				margin-right: 50px;
+			}
+
 			.block-image {
 			background-attachment: scroll;
 			min-height: 500px;
 			}
 			
-			// change items blocks
 
-			.content {
-				// change this block in column
+			/* 2x section */
+			.content2x {
+				grid-template-columns: 30px 1fr 30px;
+				grid-template-rows: 0px 1fr 150px 50px;
+				grid-gap: 20px;
 			}
-			#videoBlock{
-				// change this block in column;
+			#gimg1 {
+				height: 500px;
+				min-width: 400px;
+				background-position: center;
+				background-size: cover;
+				grid-column: 2;
+				grid-row: 2;
 			}
-			.menu {
-				display: none;
-				// add burger;
+			#gimg2 {
+				height: 500px;
+				min-width: 400px;
+				background-position: center;
+				background-size: cover;
+				grid-column: 2;
+				grid-row: 2;
 			}
+			.textLeft {
+				text-align: center;
+				grid-column: 2;
+				grid-row: 3;
+			}
+			.textRight {
+				text-align: center;
+				grid-column: 2;
+				grid-row: 3;
+			}
+
+			/* video section */
+			.fullWidth {
+				height: 700px;
+			}
+			#videoBlock {
+				margin: 0 auto;
+				grid-column: 2;
+				grid-row: 2;
+			}
+			#videoBlock video {
+				height: 500px;
+			}
+
+
+
 
 		}
 
 	/* media < 2000 */
-		@media screen and (max-width: 2000px) {
-		}
+		/* @media screen and (max-width: 2000px) {
+			
+		} */

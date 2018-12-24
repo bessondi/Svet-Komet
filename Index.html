@@ -20,7 +20,9 @@
 		</div>
 	</div>
 
-<!-- parallax block -->
+	<div id="containerImage"></div>
+
+<!-- parallax title -->
 	<div class="sectionTitle sectionParallax">
 		<h1>Ночники<br><strong>Свет Комет</strong></h1>
 			<p>Сделано с любовью и верой в реальность воображаемых миров</p>
@@ -42,14 +44,16 @@
 			<div class="menu">
 			<ul>
 				<li><a href="#">Ночники
-					<svg class="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 7.6" enable-background="new 0 0 11 7.6" xml:space="preserve"><g><polygon points="11,1.8 9.3,0 5.5,4.1 1.7,0 0,1.8 5.5,7.6"></polygon></g></svg></a></li>
+					<!-- <svg class="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 7.6" enable-background="new 0 0 11 7.6" xml:space="preserve"><g><polygon points="11,1.8 9.3,0 5.5,4.1 1.7,0 0,1.8 5.5,7.6"></polygon></g></svg> -->
+				</a></li>
 				<li><a href="#">О нас
-					<svg class="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 7.6" enable-background="new 0 0 11 7.6" xml:space="preserve"><g><polygon points="11,1.8 9.3,0 5.5,4.1 1.7,0 0,1.8 5.5,7.6"></polygon></g></svg></a></li>
+					<!-- <svg class="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 7.6" enable-background="new 0 0 11 7.6" xml:space="preserve"><g><polygon points="11,1.8 9.3,0 5.5,4.1 1.7,0 0,1.8 5.5,7.6"></polygon></g></svg> -->
+				</a></li>
 
-				<li>
+				<!-- <li>
 					<a href="#">Корзина:
 					<svg id="cart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 28" enable-background="new 0 0 30 28" xml:space="preserve"><g><path d="M26.4,13.5L30,0H0v2.3h4.6l0,10h0v7.5h20.8v-2.3H7v-4.1H26.4z M26.9,2.3l-2.4,8.9H7l0-8.9H26.9z"></path><path class="cart-icon" d="M8.2,21.4c-1.9,0-3.4,1.5-3.4,3.3S6.4,28,8.2,28s3.4-1.5,3.4-3.3S10.1,21.4,8.2,21.4z M8.2,26.1c-0.8,0-1.4-0.6-1.4-1.4c0-0.7,0.6-1.4,1.4-1.4s1.4,0.6,1.4,1.4C9.6,25.5,9,26.1,8.2,26.1z"></path><path class="cart-icon" d="M21.7,21.4c-1.9,0-3.4,1.5-3.4,3.3s1.5,3.3,3.4,3.3s3.4-1.5,3.4-3.3S23.6,21.4,21.7,21.4z M21.7,26.1c-0.8,0-1.4-0.6-1.4-1.4c0-0.7,0.6-1.4,1.4-1.4s1.4,0.6,1.4,1.4C23.1,25.5,22.5,26.1,21.7,26.1z"></path></g></svg></a><span class="items">0 р.</span>
-				</li>
+				</li> -->
 			</ul>	
 			</div>
 	</div>
@@ -86,40 +90,44 @@
 	</div>
 </div>
 
-<div class="products">
-	<div class="content3x">
-		<a href="#"><div id="itemsImg1"></div></a>
-		<a href="#"><div id="itemsImg2"></div></a>
-		<a href="#"><div id="itemsImg3"></div></a>
-	</div>
-
-	<div class="content3x contentText3x">
-		<div class="itemsText1"><a href="#">Ночник<br>Подводный мир</a></div>
-		<div class="itemsText2"><a href="#">Ночник<br>Ночной маяк</a></div>
-		<div class="itemsText3"><a href="#">Ночник<br>Новогодний город</a></div>
-	</div>
-</div>	
-
-
-
-<footer>
-	<div class="footer content2x">
-		<div class="aboutBloks">
-			<ul>
-			<li>
-				<a href="#">Ночники</a>
-			</li>
-			<li>
-				<a href="#">О нас</a>
-			</li>
-			<li>
-				<a href="#">Корзина</a>
-			</li>
-			</ul>
+<div class="products productItems">
+	<div class="content4x">
+		<div class="flexItems">
+			<a href="#">
+				<div id="itemsImg1"></div>
+				<div class="itemsText"><a href="#">Ночник<br>Подводный мир</a></div>
+			</a>
 		</div>
 
+		<div class="flexItems">
+			<a href="#">
+				<div id="itemsImg2"></div>
+				<div class="itemsText"><a href="#">Ночник<br>Ночной маяк</a></div>
+			</a>
+		</div>
+
+		<div class="flexItems">
+			<a href="#">
+				<div id="itemsImg3"></div>
+				<div class="itemsText"><a href="#">Ночник<br>Новогодний город</a></div>
+			</a>
+		</div>
+
+		<div class="flexItems">
+			<a href="#">
+				<div id="itemsImg4"></div>
+				<div class="itemsText"><a href="#">Ночник<br>Санкт-Петербург</a></div>
+			</a>
+		</div>
+
+	</div>
+</div>
+
+<footer>
+	<div class="footer">
+
 		<div class="contacts">
-			<div id="textContact">Контакты:</div>
+			<div id="textContact">Наши контакты</div>
 			<div class="contactsItem">
 				<a href="https://www.facebook.com/kometsvet">
 					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -298,8 +306,5 @@
 	var parallaxInstance = new Parallax(scene);
 </script>
 
-
-<!-- script reload -->
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
