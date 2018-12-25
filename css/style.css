@@ -43,6 +43,9 @@
 		text-decoration: none;
 		color: black;
 	}
+	form p {
+		margin: 0;	
+	}
 	footer {
 		height: 150px;
 		background-color: black; 
@@ -54,6 +57,7 @@
 		justify-content: center;
 		overflow: hidden;
 		background-color: #e1c148;
+		position: relative;
 	}
 
 	#scene {
@@ -70,6 +74,57 @@
 
 	.layer {
 		width: 100%;
+	}
+
+	/* arrow */
+	.gridBoxForArrow {
+		display: flex;
+		justify-content: center;
+	}
+	#arrow {
+		margin-top: -100px;
+		z-index: 11;
+	}
+
+	#arrow:before,
+	#arrow:after {
+		content: "";
+		position: absolute;
+		width: 1.2rem;
+		height: 1.2rem;
+		margin-left: -1rem;
+		margin-top: -1rem;
+		border: 2px solid #fafafa;
+		border-left: none;
+		border-bottom: none;
+		transform: rotate(135deg);
+		animation: arrows 2s infinite;
+	}
+
+	#arrow2 {
+		margin-top: -80px;
+		margin-left: 2px;
+	}
+
+	#arrow2:before,
+	#arrow2:after {
+		content: "";
+		position: absolute;
+		width: 1rem;
+		height: 1rem;
+		margin-left: -1rem;
+		margin-top: -1rem;
+		border: 1px solid #fafafa;
+		border-left: none;
+		border-bottom: none;
+		transform: rotate(135deg);
+		animation: arrows 2s infinite;
+	}
+	@keyframes arrows {
+		to {
+			transform: translateY(80%) rotate(135deg);
+			opacity: 0;
+		}
 	}
 
 /* main title */
@@ -99,9 +154,15 @@
 		width: 100%;
 	}
 
+	.textBlock p {
+		text-align: center;
+		font-size: 1.5rem;
+		margin-top: 50px;
+	}
+
 /* products */
 	.products, .frameSize, .footer {
-		margin: 50px auto;
+		margin: 25px auto;
 		max-width: 1280px;
 	}
 
@@ -253,10 +314,18 @@
 		height: 600px;
 		/* margin: 0; */
 	}
+	.orderLight p {
+		margin: 50px auto;
+	}
 
-
+/* form */
+	/* #sendForm {
+		border: 1px solid red;
+		margin: 0 auto;
+		width: 350px;
+	} */
+	
 /* footer */
-
 #textContact {
 	color: #fafafa;
 	font-size: 1.2rem;
@@ -279,7 +348,9 @@
 /* media < 900 for scroll */
 	@media screen and (max-width: 900px) {
 		/* parallax min */
-		#container {
+		#container,
+		#arrow,
+		#arrow2 {
 			display: none;
 		}
 		
@@ -345,7 +416,7 @@
 		}
 
 		.firstItem {
-			grid-template-rows: 0px 1fr 180px;
+			grid-template-rows: 0px 1fr 250px;
 		}
 
 		#gimg1 {
@@ -408,10 +479,12 @@
 			grid-gap: 0px;
 			row-gap: 0px;
 		}
-		.secondItem {
-			grid-template-rows: 0px 1fr 200px;
+		.firstItem {
+			grid-template-rows: 0px 1fr 250px;
 		}
-		
+		.secondItem {
+			grid-template-rows: 0px 1fr 300px;
+		}
 
 		#gimg1 {
 			height: 300px;
