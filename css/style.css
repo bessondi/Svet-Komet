@@ -43,10 +43,8 @@
 		text-decoration: none;
 		color: black;
 	}
-	form p {
-		margin: 0;	
-	}
 	footer {
+		margin-top: -25px;
 		height: 150px;
 		background-color: black; 
 	}
@@ -158,6 +156,7 @@
 		text-align: center;
 		font-size: 1.5rem;
 		margin-top: 50px;
+		font-weight: 500;
 	}
 
 /* products */
@@ -174,10 +173,12 @@
 		align-content: space-around;
 	}
 	.flexItems {
-		margin-top: 25px;
+		margin: 25px auto;
 	}
 	.itemsText{
 		margin-top: 15px;
+		font-size: 1.2rem;
+		font-weight: 400;
 	}
 	.flexItems:nth-child(1) {
 		order: 1;
@@ -309,21 +310,60 @@
 	#videoBlock {
 		grid-column: 2;
 	}
-
 	#videoBlock video {
 		height: 600px;
-		/* margin: 0; */
 	}
+
 	.orderLight p {
-		margin: 50px auto;
+		margin: 0 auto 25px;
+		padding-top: 50px;
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+	.orderLight > p > a {
+		text-decoration: underline;
 	}
 
 /* form */
-	/* #sendForm {
-		border: 1px solid red;
-		margin: 0 auto;
-		width: 350px;
-	} */
+	#sendForm {
+		margin: 10px auto;
+		/* width: 30%; */
+	}
+	.formField {
+		display: flex;
+	}
+	form {
+		float: left;
+	}
+	input[type="text"],
+	textarea {
+		font-size: 1rem;
+		width: 100%;
+		padding: 10px 15px;
+		border-width: 0;
+		outline: none;
+		margin: 0;
+	}
+	input[type="text"]:focus,
+	textarea:focus {
+		box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .2);
+	}
+	button {
+		padding: 10px 0;
+		border-width: 0;
+		display: block;
+		width: 120px;
+		margin: 15px auto;
+		background: #ffd500;
+		color: black;
+		font-size: 0.9rem;
+		outline: none;
+		text-transform: uppercase;
+	}
+
+	.orderLB {
+		background-color: #e8e8e8;
+	}
 	
 /* footer */
 #textContact {
@@ -344,7 +384,6 @@
 }
 
 /* media */
-
 /* media < 900 for scroll */
 	@media screen and (max-width: 900px) {
 		/* parallax min */
@@ -416,6 +455,10 @@
 		}
 
 		.firstItem {
+			grid-template-rows: 0px 1fr 200px;
+		}
+
+		.secondItem {
 			grid-template-rows: 0px 1fr 250px;
 		}
 
@@ -461,7 +504,7 @@
 
 	}
 
-/* media < 640 for video */
+/* media < 600 */
 	@media screen and (max-width: 600px) {
 		.products{
 			margin: 0 10px;
@@ -496,9 +539,20 @@
 		}
 		.fullWidth {
 			padding: 10px 0;
-			height: 625px;
+			height: 600px;
 		}
 		#videoBlock video {
 			height: 300px;
 		}
+		.orderLight p {
+			margin: 100px 10px 25px;
+		}
+		.textRight p {
+			margin: 0 10px;
+		}
+		.formField {
+			width: 250px;
+			margin: 0 auto;
+		}
+
 	}
