@@ -328,7 +328,6 @@
 /* form */
 	#sendForm {
 		margin: 10px auto;
-		/* width: 30%; */
 	}
 	.formField {
 		display: flex;
@@ -339,7 +338,7 @@
 	input[type="text"],
 	textarea {
 		font-size: 1rem;
-		width: 100%;
+		width: 92%;
 		padding: 10px 15px;
 		border-width: 0;
 		outline: none;
@@ -354,7 +353,7 @@
 		border-width: 0;
 		display: block;
 		width: 120px;
-		margin: 15px auto;
+		margin: 20px auto 50px;
 		background: #ffd500;
 		color: black;
 		font-size: 0.9rem;
@@ -548,8 +547,7 @@
 			height: 300px;
 		}
 		.orderLight p {
-			/* margin: 100px 10px 25px; */
-			max-width: 400px;
+			max-width: 300px;
 		}
 		.textRight p {
 			margin: 0 10px;
