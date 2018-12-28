@@ -1,3 +1,3 @@
 <p>Лендинг для "Свет Комет"</p>
 
-<a href="https://bessondi.github.io/svet-komet-lightboxes/index.html">Макет<a>
+<a href="https://bessondi.github.io/Svet-Komet-Lightboxes/index.html">Макет<a>
