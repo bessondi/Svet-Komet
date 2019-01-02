@@ -74,6 +74,23 @@
 		width: 100%;
 	}
 
+	.anim-show {
+		opacity: 0;
+		animation: show 1s 1;
+		animation-fill-mode: forwards;
+		animation-delay: 1s;
+	}
+
+	@keyframes show {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
 	/* arrow */
 	.gridBoxForArrow {
 		display: flex;

@@ -10,7 +10,7 @@
 	
 <!-- main parallax -->	
 <section>
-	<div id="container" class="container">
+	<div id="container" class="container anim-show">
 		<div id="scene" data-hover-only="true">
 			<div class="layer" data-depth="0.25"><img src="img/6.png"></div>
 			<div class="layer" data-depth="0.40"><img src="img/4.png"></div>
@@ -20,7 +20,7 @@
 			<div class="layer" data-depth="0.70"><img src="img/1.png"></div>
 		</div>
 	</div>
-	<div id="containerImage"></div>
+	<div id="containerImage" class="anim-show"></div>
 	
 	<div class="gridBoxForArrow">
 		<div id="arrow"></div>
@@ -30,12 +30,12 @@
 
 <!-- parallax title -->
 <section>
-	<div class="sectionTitle sectionParallax">
+	<div class="sectionTitle sectionParallax anim-show">
 		<h1>Ночники<br><strong>Свет Комет</strong></h1>
 			<p>Сделано с любовью и верой в реальность воображаемых миров.</p>
 	</div>
 
-	<div class="block-image bimg1">
+	<div class="block-image bimg1 anim-show">
 	</div>
 </section>
 
@@ -314,7 +314,6 @@
 </footer>
 
 <!-- script for parallax -->
-
 <script src="js/parallax.min.js"></script>
 <script>
 	var scene = document.getElementById('scene');
