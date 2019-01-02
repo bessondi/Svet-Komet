@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width", initial-scale=1>
 	<title>Ночники Свет Комет</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 <body>
 	
@@ -31,8 +32,8 @@
 <!-- parallax title -->
 <section>
 	<div class="sectionTitle sectionParallax anim-show">
-		<h1>Ночники<br><strong>Свет Комет</strong></h1>
-			<p>Сделано с любовью и верой в реальность воображаемых миров.</p>
+		<h1 class="wow fadeInUp">Ночники<br><strong>Свет Комет</strong></h1>
+			<p class="wow fadeInUp">Сделано с любовью и верой в реальность воображаемых миров.</p>
 	</div>
 
 	<div class="block-image bimg1 anim-show">
@@ -64,7 +65,7 @@
 <!-- blocks -->
 <section>
 	<div class="products">
-		<div class="content2x firstItem">
+		<div class="content2x firstItem wow fadeInRight" data-wow-duration="1.5s" data-wow-offset="100">
 			<a name="about"></a>
 			<div id="gimg2"></div>
 			<div class="textRight">
@@ -73,7 +74,7 @@
 			</div>
 		</div>
 
-		<div class="content2x secondItem">
+		<div class="content2x secondItem wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="100">
 			<div class="textLeft">
 				<p>Наши ночники подходят не только для детей и детских комнат. Они отлично вписываются в любой интерьер и делают его уютным.<br><br>
 				В наших ночниках мы используем LED-подсветку, которая не нагревается. Можно спокойно оставить ночник работать всю ночь - это безопасно.</p>
@@ -89,7 +90,7 @@
 			<div id="videoBlock"><video loop autoplay controls muted><source src="movie/rotate.mp4" type="video/mp4" poster="movie/video-img.png"></video>
 			</div>
 
-			<div class="textRight">
+			<div class="textRight wow fadeInUp">
 				<p>Наши ночники появились из огромной любви к миру фантазии, воображения и уважения к внутреннему ребёнку, что живет в каждом из нас.</p>
 			</div>
 		</div>
@@ -103,28 +104,28 @@
 
 	<div class="products productItems">
 		<div class="content4x">
-			<div class="flexItems">			
+			<div class="flexItems wow fadeInUp">			
 				<a href="#">
 					<div id="itemsImg1"></div>
 					<div class="itemsText"><a href="#">Ночник<br>Подводный мир</a></div>
 				</a>
 			</div>
 
-			<div class="flexItems">
+			<div class="flexItems wow fadeInUp">
 				<a href="#">
 					<div id="itemsImg2"></div>
 					<div class="itemsText"><a href="#">Ночник<br>Ночной маяк</a></div>
 				</a>
 			</div>
 
-			<div class="flexItems">
+			<div class="flexItems wow fadeInUp">
 				<a href="#">
 					<div id="itemsImg3"></div>
 					<div class="itemsText"><a href="#">Ночник<br>Новогодний город</a></div>
 				</a>
 			</div>
 
-			<div class="flexItems">
+			<div class="flexItems wow fadeInUp">
 				<a href="#">
 					<div id="itemsImg4"></div>
 					<div class="itemsText"><a href="#">Ночник<br>Санкт-Петербург</a></div>
@@ -318,6 +319,11 @@
 <script>
 	var scene = document.getElementById('scene');
 	var parallaxInstance = new Parallax(scene);
+</script>
+
+<script src="js/wow.js"></script>
+<script>
+	new WOW().init();
 </script>
 
 </body>
