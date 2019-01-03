@@ -197,7 +197,7 @@
 		font-size: 1.2rem;
 		font-weight: 400;
 	}
-	.flexItems:nth-child(1) {
+	/* .flexItems:nth-child(1) {
 		order: 1;
 	}
 	.flexItems:nth-child(2) {
@@ -208,7 +208,7 @@
 	}
 	.flexItems:nth-child(4) {
 		order: 4;
-	}
+	} */
 
 
 /* nav - menu */
@@ -318,6 +318,43 @@
 
 	.itemsText {
 		text-align: center;
+	}
+
+/* modal windows in high resolution */
+	#highRes1 {
+		background: url('../img/fullRes/Ship02_F.jpg') no-repeat;
+		min-height: 800px;
+		max-width: 800px;
+		background-position: center;
+		background-size: cover;
+		box-sizing: border-box;
+	}
+
+	#highRes2 {
+		background: url('../img/fullRes/Lighthouse02_F.jpg') no-repeat;
+		min-height: 800px;
+		max-width: 800px;
+		background-position: center;
+		background-size: cover;
+		box-sizing: border-box;
+	}
+
+	#highRes3 {
+		background: url('../img/fullRes/City02_F.jpg') no-repeat;
+		min-height: 800px;
+		max-width: 800px;
+		background-position: center;
+		background-size: cover;
+		box-sizing: border-box;
+	}
+
+	#highRes4 {
+		background: url('../img/fullRes/SPb_F.jpg') no-repeat;
+		min-height: 800px;
+		max-width: 800px;
+		background-position: center;
+		background-size: cover;
+		box-sizing: border-box;
 	}
 
 /* video block */
@@ -524,7 +561,29 @@
 		.orderLight p {
 			max-width: 500px;
 		}
+
+		/* modal windows in high resolution <900px */
+		#highRes1 {
+			min-height: 600px;
+			max-width: 600px;
+		}
+
+		#highRes2 {
+			min-height: 600px;
+			max-width: 600px;
+		}
+
+		#highRes3 {
+			min-height: 600px;
+			max-width: 600px;
+		}
+
+		#highRes4 {
+			min-height: 600px;
+			max-width: 600px;
+		}
 	}
+
 
 /* media < 600 */
 	@media screen and (max-width: 600px) {
@@ -569,12 +628,27 @@
 		.orderLight p {
 			max-width: 300px;
 		}
-		/* #videoBlock > .textRight p {
-			/* margin: 10px 10px; 
-		} */
 		.formField {
 			width: 300px;
 			margin: 0 auto;
+		}
+
+		/* modal windows in high resolution <600px */
+		#highRes1 {
+			min-height: 400px;
+			max-width: 400px;
+		}
+		#highRes2 {
+			min-height: 400px;
+			max-width: 400px;
+		}
+		#highRes3 {
+			min-height: 400px;
+			max-width: 400px;
+		}
+		#highRes4 {
+			min-height: 400px;
+			max-width: 400px;
 		}
 
 	}

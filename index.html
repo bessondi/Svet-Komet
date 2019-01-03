@@ -6,6 +6,10 @@
 	<title>Ночники Свет Комет</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
 	
@@ -51,12 +55,8 @@
 			
 			<div class="menu">
 			<ul>
-				<li><a href="#nightLight">Ночники
-					<!-- <svg class="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 7.6" enable-background="new 0 0 11 7.6" xml:space="preserve"><g><polygon points="11,1.8 9.3,0 5.5,4.1 1.7,0 0,1.8 5.5,7.6"></polygon></g></svg> -->
-				</a></li>
-				<li><a href="#about">О нас
-					<!-- <svg class="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 7.6" enable-background="new 0 0 11 7.6" xml:space="preserve"><g><polygon points="11,1.8 9.3,0 5.5,4.1 1.7,0 0,1.8 5.5,7.6"></polygon></g></svg> -->
-				</a></li>
+				<li><a href="#nightLight">Ночники</a></li>
+				<li><a href="#about">О нас</a></li>
 			</ul>	
 			</div>
 	</div>
@@ -104,31 +104,36 @@
 
 	<div class="products productItems">
 		<div class="content4x">
-			<div class="flexItems wow fadeInUp">			
-				<a href="#">
+
+			<div id="highRes1" class="modal"></div>
+			<div class="flexItems wow fadeInUp">
+				<a href="#highRes1" rel="modal:open">
 					<div id="itemsImg1"></div>
-					<div class="itemsText"><a href="#">Ночник<br>Подводный мир</a></div>
+					<div class="itemsText"><a href="#highRes1" rel="modal:open">Ночник<br>Подводный мир</a></div>
 				</a>
 			</div>
 
+			<div id="highRes2" class="modal"></div>
 			<div class="flexItems wow fadeInUp">
-				<a href="#">
+				<a href="#highRes2" rel="modal:open">
 					<div id="itemsImg2"></div>
-					<div class="itemsText"><a href="#">Ночник<br>Ночной маяк</a></div>
+					<div class="itemsText"><a href="#highRes2" rel="modal:open">Ночник<br>Ночной маяк</a></div>
 				</a>
 			</div>
 
+			<div id="highRes3" class="modal"></div>
 			<div class="flexItems wow fadeInUp">
-				<a href="#">
+				<a href="#highRes3" rel="modal:open">
 					<div id="itemsImg3"></div>
-					<div class="itemsText"><a href="#">Ночник<br>Новогодний город</a></div>
+					<div class="itemsText"><a href="#highRes3" rel="modal:open">Ночник<br>Новогодний город</a></div>
 				</a>
 			</div>
 
+			<div id="highRes4" class="modal"></div>
 			<div class="flexItems wow fadeInUp">
-				<a href="#">
+				<a href="#highRes4" rel="modal:open">
 					<div id="itemsImg4"></div>
-					<div class="itemsText"><a href="#">Ночник<br>Санкт-Петербург</a></div>
+					<div class="itemsText"><a href="#highRes4" rel="modal:open">Ночник<br>Санкт-Петербург</a></div>
 				</a>
 			</div>
 
