@@ -178,7 +178,7 @@
 
 /* products */
 	.products, .frameSize, .footer {
-		margin: 25px auto;
+		margin: 20px auto;
 		max-width: 1280px;
 	}
 
@@ -424,22 +424,25 @@
 	}
 	
 /* footer */
-#textContact {
-	color: #fafafa;
-	font-size: 1.2rem;
-	margin-bottom: 20px;
-	padding-top: 20px;
-}
+	#textContact {
+		color: #fafafa;
+		font-size: 1.2rem;
+		margin-bottom: 20px;
+		padding-top: 20px;
+	}
 
-.contactsItem {
-	display: inline-block;
-	margin: 10px;
-	fill: #fafafa;
-}
+	.contactsItem {
+		display: inline-block;
+		margin: 10px;
+		fill: #fafafa;
+	}
 
-.contacts {
-	text-align: center;
-}
+	.contacts {
+		text-align: center;
+	}
+	.contactsItem a svg {
+		fill: white;
+	}
 
 /* media */
 /* media < 900 for scroll */
