@@ -177,6 +177,7 @@ footer {
     text-align: center;
     font-size: 2rem;
     margin-top: 50px;
+    margin-bottom: 75px;
     font-weight: 500;
 }
 
@@ -232,8 +233,8 @@ footer {
     row-gap: 20px;
     align-items: center;
     grid-template-columns: 50px 300px 2fr 80px;
-    margin-top: 25px;
-    margin-bottom: 50px;
+    margin: 10px auto 50px;
+    max-width: 1280px;
 }
 
 .nav h1 {
@@ -280,6 +281,8 @@ footer {
     display: grid;
     align-items: center;
     grid-template-columns: 10px 1fr 1fr 10px;
+    grid-template-rows: 1fr auto;
+
     grid-gap: 40px;
 }
 
@@ -390,8 +393,7 @@ footer {
 .fullWidth {
     color: #fff;
     background-color: #000;
-    height: 600px;
-    margin-top: 10px;
+    height: 850px;
 }
 
 #videoBlock {
@@ -448,7 +450,7 @@ button {
     border-width: 0;
     display: block;
     width: 120px;
-    margin: 20px auto 50px;
+    margin: 50px auto;
     background: black;
     border-radius: 25px;
     color: white;
@@ -463,6 +465,7 @@ button:hover {
 
 .orderLB {
     background-color: #e8e8e8;
+    padding-bottom: 50px;
 }
 
 /* footer */
@@ -492,6 +495,52 @@ button:hover {
     fill: white;
 }
 
+/* section transitions */
+.transitionParallaxBottom {
+    background: url('../img/transitions/black_wave_bottom.svg');
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+.transitionParallaxTop {
+    background: url('../img/transitions/wave_white_top.svg');
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    margin-top: 700px;
+}
+
+.transitionVideoTop {
+    background: url('../img/transitions/white_wave_bottom2.svg');
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+}
+
+.transitionVideoBottom {
+    background: url('../img/transitions/black_wave_bottom.svg');
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+.transitionFormTop {
+    background: url('../img/transitions/wave_white_top2.svg');
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+.transitionFooter {
+    background: url('../img/transitions/black_wave_up.svg');
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    margin-top: -100px;
+}
+
+
 /* media */
 /* media < 900 for scroll */
 @media screen and (max-width: 900px) {
@@ -509,6 +558,7 @@ button:hover {
         background-position: center;
         background-size: cover;
     }
+
 
     /* nav */
     h1 {
@@ -617,11 +667,23 @@ button:hover {
     }
 
     #videoBlock video {
-        height: 500px;
+        height: 400px;
     }
 
     .orderLight p {
         max-width: 500px;
+    }
+
+    .transitionParallaxTop {
+        margin-top: 500px;
+    }
+
+    .transitionVideoTop {
+        height: 80px;
+    }
+
+    .transitionVideoBottom {
+        height: 80px;
     }
 
     /* modal windows in high resolution <900px */
@@ -649,12 +711,21 @@ button:hover {
 
 /* media < 600 */
 @media screen and (max-width: 600px) {
+    .transitionParallaxTop {
+        margin-top: 300px;
+    }
+
+    .transitionVideoTop {
+        height: 100px;
+        margin: 0;
+    }
+
     .products {
         margin: 0 10px;
     }
 
     #containerImage {
-        height: 300px;
+        height: 400px;
     }
 
     .bimg1 {
@@ -684,11 +755,6 @@ button:hover {
     #gimg2 {
         height: 300px;
         min-width: 200px;
-    }
-
-    .fullWidth {
-        padding: 10px 0;
-        height: 600px;
     }
 
     #videoBlock video {
@@ -724,5 +790,4 @@ button:hover {
         min-height: 400px;
         max-width: 400px;
     }
-
 }
