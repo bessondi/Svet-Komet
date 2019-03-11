@@ -1,3 +1,3 @@
-<p>Лендинг для "Свет Комет"</p>
+Responsive landing page for the "Svet Komet Lightboxes".
 
-<a href="https://bessondi.github.io/Svet-Komet-Lightboxes/index.html">Макет<a>
+<a href="https://bessondi.github.io/Svet-Komet-Lightboxes/index.html">Landing page<a>
