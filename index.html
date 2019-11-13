@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -9,207 +10,220 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
+
 <body>
 
-<!-- main parallax -->
-<section>
-    <div id="container" class="container anim-show">
-        <div id="scene" data-hover-only="true">
-            <div class="layer" data-depth="0.25"><img src="img/6.png"></div>
-            <div class="layer" data-depth="0.40"><img src="img/4.png"></div>
-            <div class="layer" data-depth="0.30"><img src="img/5.png"></div>
-            <div class="layer" data-depth="0.50"><img src="img/3.png"></div>
-            <div class="layer" data-depth="0.60"><img src="img/2.png"></div>
-            <div class="layer" data-depth="0.70"><img src="img/1.png"></div>
-        </div>
-    </div>
-    <div id="containerImage" class="anim-show"></div>
-
-    <div class="gridBoxForArrow">
-        <div id="arrow"></div>
-        <div id="arrow2"></div>
-    </div>
-</section>
-
-<!-- parallax title -->
-<section>
-    <div class="sectionTitle sectionParallax anim-show">
-        <h1 class="wow fadeInUp">Ночники<br><strong>Свет Комет</strong></h1>
-        <p class="wow fadeInUp">сделано с любовью и верой в реальность воображаемых миров</p>
-    </div>
-
-    <div class="block-image bimg1 anim-show">
-        <div class="transitionParallaxBottom"></div>
-        <div class="transitionParallaxTop"></div>
-    </div>
-</section>
-
-<!-- nav -->
-<nav>
-    <div class="nav wow fadeInUp">
-        <!--<div id="comet">&#9732</div>-->
-        <div id="comet"></div>
-        <h1>Свет<br>Комет</h1>
-
-        <div class="menu">
-            <ul>
-                <li><a href="#nightLight">Ночники</a></li>
-                <li><a href="#about">О нас</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- sections -->
-<section>
-    <div class="products">
-        <a name="about"></a>
-        <div class="content2x firstItem wow fadeInRight" data-wow-duration="1.5s" data-wow-offset="100">
-            <div id="gimg2"></div>
-            <div class="textRight">
-                <p>Свет комет - это наша небольшая мастерская, где нас всего двое.<br><br>
-                    Мы находимся в Санкт-Петербурге, а наши ночники доставляются бесплатно почтой по всей России.</p>
+    <!-- main parallax -->
+    <section>
+        <div id="container" class="container anim-show">
+            <div id="scene" data-hover-only="true">
+                <div class="layer" data-depth="0.25"><img src="img/6.png"></div>
+                <div class="layer" data-depth="0.40"><img src="img/4.png"></div>
+                <div class="layer" data-depth="0.30"><img src="img/5.png"></div>
+                <div class="layer" data-depth="0.50"><img src="img/3.png"></div>
+                <div class="layer" data-depth="0.60"><img src="img/2.png"></div>
+                <div class="layer" data-depth="0.70"><img src="img/1.png"></div>
             </div>
         </div>
+        <div id="containerImage" class="anim-show"></div>
 
-        <div class="content2x secondItem wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="100">
-            <div class="textLeft">
-                <p>Наши ночники подходят не только для детей и детских комнат. Они отлично вписываются в любой интерьер
-                    и делают его уютным.<br><br>
-                    В наших ночниках мы используем LED-подсветку, которая не нагревается. Можно спокойно оставить ночник
-                    работать всю ночь - это безопасно.</p>
-            </div>
-            <div id="gimg1"></div>
+        <div class="gridBoxForArrow">
+            <div id="arrow"></div>
+            <div id="arrow2"></div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="wow fadeInUp">
-    <div class="fullWidth">
-        <div class="transitionVideoTop"></div>
-        <div class="content2x frameSize">
-            <div id="videoBlock">
-                <video loop autoplay controls muted>
-                    <source src="movie/rotate.mp4" type="video/mp4" poster="movie/video-img.png">
-                </video>
-            </div>
-
-            <div class="textRight wow fadeInUp">
-                <p>Наши ночники появились из огромной любви к миру фантазии, воображения и уважения к внутреннему
-                    ребёнку, что живет в каждом из нас.</p>
-            </div>
+    <!-- parallax title -->
+    <section>
+        <div class="sectionTitle sectionParallax anim-show">
+            <h1 class="wow fadeInUp">Ночники<br><strong>Свет Комет</strong></h1>
+            <p class="wow fadeInUp">сделано с любовью и верой в реальность воображаемых миров</p>
         </div>
-    </div>
-    <div class=" transitionVideoBottom"></div>
 
-</section>
-
-<section>
-    <div class="textBlock wow fadeInUp">
-        <p><a name="nightLight"></a>НОЧНИКИ</p>
-    </div>
-
-    <div class="products productItems">
-        <div class="content4x">
-
-            <div id="highRes1" class="modal"></div>
-            <div class="flexItems wow fadeInUp">
-                <a href="#highRes1" rel="modal:open">
-                    <div id="itemsImg1"></div>
-                    <div class="itemsText"><a href="#highRes1" rel="modal:open">Ночник<br>Подводный мир</a></div>
-                </a>
-            </div>
-
-            <div id="highRes2" class="modal"></div>
-            <div class="flexItems wow fadeInUp">
-                <a href="#highRes2" rel="modal:open">
-                    <div id="itemsImg2"></div>
-                    <div class="itemsText"><a href="#highRes2" rel="modal:open">Ночник<br>Ночной маяк</a></div>
-                </a>
-            </div>
-
-            <div id="highRes3" class="modal"></div>
-            <div class="flexItems wow fadeInUp">
-                <a href="#highRes3" rel="modal:open">
-                    <div id="itemsImg3"></div>
-                    <div class="itemsText"><a href="#highRes3" rel="modal:open">Ночник<br>Новогодний город</a></div>
-                </a>
-            </div>
-
-            <div id="highRes4" class="modal"></div>
-            <div class="flexItems wow fadeInUp">
-                <a href="#highRes4" rel="modal:open">
-                    <div id="itemsImg4"></div>
-                    <div class="itemsText"><a href="#highRes4" rel="modal:open">Ночник<br>Санкт-Петербург</a></div>
-                </a>
-            </div>
-
+        <div class="block-image bimg1 anim-show">
+            <div class="transitionParallaxBottom"></div>
+            <div class="transitionParallaxTop"></div>
         </div>
-    </div>
-    <div class=" transitionFormTop"></div>
-</section>
+    </section>
 
-<section class="orderLB">
-    <div class="textBlock orderLight">
-        <p>Чтобы заказать ночник или задать интересующие вопросы, напишите нам на почту <a
-                href="mailto:svetkomet@yandex.ru">svetkomet@yandex.ru</a>, либо воспользуйтесь формой ниже:</p>
-    </div>
+    <!-- nav -->
+    <nav>
+        <div class="nav wow fadeInUp">
+            <!--<div id="comet">&#9732</div>-->
+            <div id="comet"></div>
+            <h1>Свет<br>Комет</h1>
 
-    <div class="formField">
-        <form name="sendText" method="post" id="sendForm" action="sendText.php">
-            <!--<label for="name"><b></b></label><br>-->
-            <input id="name" type="text" placeholder="Ваше имя" required><br><br>
-
-            <!--<label for="mailAdress"><b></b></label><br>-->
-            <input id="mailAdress" type="text" placeholder="E-mail" required><br><br>
-
-            <!--<label for="askQuestion"><b></b></label><br>-->
-            <textarea name="comment" id="askQuestion" placeholder="Сообщение" cols="55" rows="6" required></textarea>
-            <button>Отправить</button>
-        </form>
-    </div>
-</section>
-
-<div class=" transitionFooter"></div>
-
-<footer>
-    <div class="footer">
-        <div class="contacts">
-            <div id="textContact">Наши контакты</div>
-            <div class="contactsItem">
-                <a href="https://www.facebook.com/kometsvet">
-                    <img src="./img/socialIcons/fb.svg" alt="Facebook" width="35px" height="35px">
-                </a>
-            </div>
-
-            <div class="contactsItem">
-                <a href="https://vk.com/svetkomet">
-                    <img src="./img/socialIcons/vk.svg" alt="VK" width="35px" height="35px">
-                </a>
-            </div>
-
-            <div class="contactsItem">
-                <a href="https://www.instagram.com/svetkomet">
-                    <img src="./img/socialIcons/instagram.svg" alt="VK" width="35px" height="35px">
-                </a>
+            <div class="menu">
+                <ul>
+                    <li><a href="#nightLight">Ночники</a></li>
+                    <li><a href="#about">О нас</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-</footer>
+    </nav>
 
-<!-- script for parallax -->
-<script src="js/parallax.min.js"></script>
-<script>
-    var scene = document.getElementById('scene');
-    var parallaxInstance = new Parallax(scene);
-</script>
+    <!-- sections -->
+    <section>
+        <div class="products">
+            <a name="about"></a>
+            <div class="content2x firstItem wow fadeInRight" data-wow-duration="1.5s" data-wow-offset="100">
+                <div id="gimg2"></div>
+                <div class="textRight">
+                    <p>Свет комет - это наша небольшая мастерская, где нас всего двое.<br><br>
+                        Мы находимся в Санкт-Петербурге, а наши ночники доставляются бесплатно почтой по всей России.
+                    </p>
+                </div>
+            </div>
 
-<script src="js/wow.js"></script>
-<script>
-    new WOW().init();
-</script>
+            <div class="content2x secondItem wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                <div class="textLeft">
+                    <p>Наши ночники подходят не только для детей и детских комнат. Они отлично вписываются в любой
+                        интерьер
+                        и делают его уютным.<br><br>
+                        В наших ночниках мы используем LED-подсветку, которая не нагревается. Можно спокойно оставить
+                        ночник
+                        работать всю ночь - это безопасно.</p>
+                </div>
+                <div id="gimg1"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wow fadeInUp">
+        <div class="fullWidth">
+            <div class="transitionVideoTop"></div>
+            <div class="content2x frameSize">
+                <div id="videoBlock">
+                    <video loop autoplay muted>
+                        <source src="movie/rotate.mp4" type="video/mp4" poster="movie/video-img.png">
+                    </video>
+                </div>
+
+                <div class="textRight wow fadeInUp">
+                    <p>Наши ночники появились из огромной любви к миру фантазии, воображения и уважения к внутреннему
+                        ребёнку, что живет в каждом из нас.</p>
+                </div>
+            </div>
+        </div>
+        <div class=" transitionVideoBottom"></div>
+
+    </section>
+
+    <section>
+        <div class="textBlock wow fadeInUp">
+            <p><a name="nightLight"></a>НОЧНИКИ</p>
+        </div>
+
+        <div class="products productItems">
+            <div class="content4x">
+
+                <div id="highRes1" class="modal"></div>
+                <div class="flexItems wow fadeInUp">
+                    <a href="#highRes1" rel="modal:open">
+                        <div id="itemsImg1"></div>
+                        <div class="itemsText"><a href="#highRes1" rel="modal:open">Ночник<br>Подводный мир</a></div>
+                    </a>
+                </div>
+
+                <div id="highRes2" class="modal"></div>
+                <div class="flexItems wow fadeInUp">
+                    <a href="#highRes2" rel="modal:open">
+                        <div id="itemsImg2"></div>
+                        <div class="itemsText"><a href="#highRes2" rel="modal:open">Ночник<br>Ночной маяк</a></div>
+                    </a>
+                </div>
+
+                <div id="highRes3" class="modal"></div>
+                <div class="flexItems wow fadeInUp">
+                    <a href="#highRes3" rel="modal:open">
+                        <div id="itemsImg3"></div>
+                        <div class="itemsText"><a href="#highRes3" rel="modal:open">Ночник<br>Новогодний город</a></div>
+                    </a>
+                </div>
+
+                <div id="highRes4" class="modal"></div>
+                <div class="flexItems wow fadeInUp">
+                    <a href="#highRes4" rel="modal:open">
+                        <div id="itemsImg4"></div>
+                        <div class="itemsText"><a href="#highRes4" rel="modal:open">Ночник<br>Санкт-Петербург</a></div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class=" transitionFormTop"></div>
+    </section>
+
+    <section class="orderLB">
+        <div class="textBlock orderLight">
+            <p>Чтобы заказать ночник или задать интересующие вопросы, напишите нам на почту <a
+                    href="mailto:svetkomet@yandex.ru">svetkomet@yandex.ru</a>, либо воспользуйтесь формой ниже:</p>
+        </div>
+
+
+         <div class="formField">
+         <form name="sendText" method="post" id="sendForm" action="sendText.php">
+        <label for="name"><b></b></label><br>
+         <input id="name" type="text" placeholder="Ваше имя" required><br><br>
+
+        <label for="mailAdress"><b></b></label><br>
+         <input id="mailAdress" type="text" placeholder="E-mail" required><br><br>
+
+        <label for="askQuestion"><b></b></label><br>
+         <textarea name="comment" id="askQuestion" placeholder="Сообщение" cols="55" rows="6" required></textarea>
+         <button>Отправить</button>
+         </form>
+         </div>
+
+    </section>
+
+    <div class=" transitionFooter"></div>
+
+    <footer>
+        <div class="footer">
+            <div class="contacts">
+                <div id="textContact">Наши контакты</div>
+                <div class="contactsItem">
+                    <a href="https://www.facebook.com/kometsvet">
+                        <img src="./img/socialIcons/fb.svg" alt="Facebook" width="35px" height="35px">
+                    </a>
+                </div>
+
+                <div class="contactsItem">
+                    <a href="https://vk.com/svetkomet">
+                        <img src="./img/socialIcons/vk.svg" alt="VK" width="35px" height="35px">
+                    </a>
+                </div>
+
+                <div class="contactsItem">
+                    <a href="https://www.instagram.com/svetkomet">
+                        <img src="./img/socialIcons/instagram.svg" alt="VK" width="35px" height="35px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script for parallax -->
+    <script src="js/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
 
 </body>
+
 </html>

@@ -29,6 +29,12 @@ body {
     background-color: #f5f5f5;
 }
 
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
 h1 {
     text-transform: uppercase;
     font-weight: 700;
@@ -196,6 +202,7 @@ footer {
 }
 
 .flexItems {
+	padding: 25px;
     margin: 25px auto;
     transition: 0.6s;
 }
@@ -413,7 +420,7 @@ footer {
 
 .orderLight p {
     max-width: 900px;
-    margin: 0 auto 25px;
+    margin: 0 auto 75px;
     padding-top: 50px;
     font-size: 1.5rem;
     font-weight: 400;
